@@ -1,0 +1,7 @@
+{:uriI"Éfile://app/assets/javascripts/views/home.html?type=text/ng-html&id=bda8b8e6b2ab06a875a1fd1d224ce97526e771a9a51cea395891a02b9be71e57:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/views/home.html;T:	nameI"views/home;T:logical_pathI"views/home.html;T:content_typeI"text/ng-html;T:sourceI"F<div class="col-lg-8 col-lg-offset-2">
+	<h1>{{hello}}</h1>
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"9file-digest://app/assets/javascripts/views/home.html;TTF:charsetI"
+utf-8;F:digest"%v{[v{•*}ﬂ1ˇc.\ä83‰Ñ,∞ru_mÃ…q§:lengthiF:dependencies_digest"%“yµKµ‚ƒÿŒpF~;≥x“°â¨¿ù(ƒ #ª·:idI"Ebda8b8e6b2ab06a875a1fd1d224ce97526e771a9a51cea395891a02b9be71e57;F:
+mtimel+2kFY
