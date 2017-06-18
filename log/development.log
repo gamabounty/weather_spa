@@ -1,0 +1,32 @@
+Started GET "/" for 127.0.0.1 at 2017-06-17 18:30:57 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 31ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-17 18:57:52 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb (15.2ms)
+Completed 200 OK in 34ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-17 20:34:08 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb (11.9ms)
+Completed 200 OK in 101ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-18 11:55:36 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/railties-5.0.3/lib/rails/templates/rails/welcome/index.html.erb (12.1ms)
+Completed 200 OK in 106ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
