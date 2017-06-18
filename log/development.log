@@ -30,3 +30,24 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 106ms (Views: 39.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-06-18 13:08:30 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (2113.9ms)
+Completed 200 OK in 2120ms (Views: 2120.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-18 13:12:16 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (9023.5ms)
+Completed 200 OK in 9095ms (Views: 9094.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-18 13:14:18 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1668.4ms)
+Completed 200 OK in 1675ms (Views: 1674.4ms | ActiveRecord: 0.0ms)
+
+
