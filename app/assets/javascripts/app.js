@@ -1,5 +1,5 @@
 (function(){
   angular
-    .module('myWeatherApp',['ui.router','templates']);
+    .module('myWeatherApp',['ui.router','templates', 'ngResource']);
 
 }())

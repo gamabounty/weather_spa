@@ -9,6 +9,7 @@ class WeatherController < ActionController::Base
 	  else
 	  	@weather = WeatherForecast.get_weather("20170601", "Paris")
 	  end
-	  render 'application/test'
+	  # render 'application/test'
+	  render json: @weather
 	end
 end
