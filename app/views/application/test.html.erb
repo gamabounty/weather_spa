@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WeatherApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <div>
+    	Test page
+    </div>
+    <p>The max temperature is: <%= @weather.maxtemp %></p>
+    <p>The mean temperature is: <%= @weather.meantemp %></p>
+    <p>The min temperature is: <%= @weather.mintemp %></p>
+  </body>
+</html>
