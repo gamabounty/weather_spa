@@ -11,6 +11,7 @@ class WeatherForecast
     @mintemp = response['history']['dailysummary'][0]['mintempm']
   end
 
+  # this method uses httparty to make a get request on the Wunderground API
   def self.get_weather(date, city)
     response = get("/api/#{ENV["wunderground_key"]}/history_#{date}/q/France/#{city}.json")
     if response.success?

@@ -1,4 +1,16 @@
 <div class="col-lg-8">
 	<h1>{{hello}}</h1>
-	<p>{{test}}</p>
 </div>
+<div>
+	<input type="text" ng-model="date">
+	<!-- <input type="text" ng-model="city"> -->
+	<select ng-model="city">
+	  <option value="paris">Paris</option>
+	  <option value="lyon">Lyon</option>
+	  <option value="nantes">Nantes</option>
+	  <option value="bordeaux">Bordeaux</option>
+	</select>
+	<button ng-click='getWeather()'>Get weather !!!</button>
+</div>
+
+<p>{{test}}</p>
