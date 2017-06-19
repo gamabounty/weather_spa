@@ -1,16 +1,16 @@
-<div class="col-lg-8">
-	<h1>{{hello}}</h1>
-</div>
+<my-navbar-directive></my-navbar-directive>
 <div>
-	<input type="text" ng-model="date">
-	<!-- <input type="text" ng-model="city"> -->
-	<select ng-model="city">
-	  <option value="paris">Paris</option>
-	  <option value="lyon">Lyon</option>
-	  <option value="nantes">Nantes</option>
-	  <option value="bordeaux">Bordeaux</option>
-	</select>
-	<button ng-click='getWeather()'>Get weather !!!</button>
+	<form ng-submit='getWeather()'>
+		<input type="text" ng-model="date">
+		<!-- <input type="text" ng-model="city"> -->
+		<select ng-model="city">
+		  <option value="paris" selected>Paris</option>
+		  <option value="lyon">Lyon</option>
+		  <option value="nantes">Nantes</option>
+		  <option value="bordeaux">Bordeaux</option>
+		</select>
+		<button type="submit">Get weather !!!</button>
+	</form>
 </div>
 
 <p>{{test}}</p>
