@@ -1,25 +1,31 @@
 <my-navbar-directive></my-navbar-directive>
 <div>
 	<form ng-submit='getWeather()'>
-		<input type="text" value="{{datepicker | date : 'yyyyMMdd'}}">
+		<!-- <input type="text" value="{{datepicker | date : 'yyyyMMdd'}}"> -->
 		<!-- <input type="text" ng-model="city"> -->
+		<div>
+			<md-datepicker ng-model="datepicker" md-min-date="minDate" md-placeholder="Enter date" md-open-on-focus></md-datepicker>
+		</div>
+		<label>Choose a city !</label>
 		<select ng-model="city">
-		  <option value="paris" selected>Paris</option>
+		  <option value="paris">Paris</option>
 		  <option value="lyon">Lyon</option>
 		  <option value="nantes">Nantes</option>
 		  <option value="bordeaux">Bordeaux</option>
-		</select>
+		</select> <br/>
 		<button type="submit">Get weather !!!</button>
 	</form>
 </div>
 <div layout-gt-xs="row">
-	<div>
-		<h4>Opening the calendar when the input is focused</h4>
-		<md-datepicker ng-model="datepicker" md-min-date="minDate" md-placeholder="Enter date" md-open-on-focus></md-datepicker>
-	</div>
 </div>
-<div>
-	<p>{{test}}</p>
+<!-- <div>
+	<p>{{datepicker}}</p>
+	<p>{{finaldate}}</p>
+</div> -->
+
+<div ng-if="result.maxtemp" class="animate-if">
+	<p>A {{city | capitalize}} le {{datepicker | date : 'dd/MM/yyyy'}}, voici la météo qu'il faisait :</p>
+	<p>Température maximale : {{result.maxtemp}}°C</p>
+	<p>Température moyenne : {{result.meantemp}}°C</p>
+	<p>Température minimale : {{result.mintemp}}°C</p>
 </div>
-{{datepicker}}
-{{finaldate}}

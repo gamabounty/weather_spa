@@ -2296,3 +2296,687 @@ Processing by ApplicationController#index as HTML
 Completed 200 OK in 215ms (Views: 214.6ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-06-21 22:34:06 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (2857.3ms)
+Completed 200 OK in 2905ms (Views: 2904.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/lyon" for 127.0.0.1 at 2017-06-21 22:34:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/weather/lyon"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered collection of /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (36.2ms)
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (64.7ms)
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (138.2ms)
+Started GET "/" for 127.0.0.1 at 2017-06-21 22:40:45 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (765.4ms)
+Completed 200 OK in 767ms (Views: 767.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20080514/nantes" for 127.0.0.1 at 2017-06-21 22:41:14 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20080514", "city"=>"nantes"}
+Completed 200 OK in 594ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20080514/nantes" for 127.0.0.1 at 2017-06-21 22:41:24 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20080514", "city"=>"nantes"}
+Completed 200 OK in 250ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 22:44:02 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (941.7ms)
+Completed 200 OK in 949ms (Views: 948.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/bordeaux" for 127.0.0.1 at 2017-06-21 22:44:22 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"bordeaux"}
+Completed 200 OK in 300ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 22:46:22 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (984.9ms)
+Completed 200 OK in 991ms (Views: 990.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/lyon" for 127.0.0.1 at 2017-06-21 22:46:38 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"lyon"}
+Completed 200 OK in 292ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/lyon" for 127.0.0.1 at 2017-06-21 22:46:43 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"lyon"}
+Completed 200 OK in 250ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/lyon" for 127.0.0.1 at 2017-06-21 22:46:50 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"lyon"}
+Completed 200 OK in 268ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/lyon" for 127.0.0.1 at 2017-06-21 22:46:51 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"lyon"}
+Completed 200 OK in 263ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 22:46:53 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (179.0ms)
+Completed 200 OK in 181ms (Views: 181.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620" for 127.0.0.1 at 2017-06-21 22:47:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/weather/20170620"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.4ms)
+  Rendered collection of /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (2.2ms)
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.8ms)
+Started GET "/weather/20170620/lyon" for 127.0.0.1 at 2017-06-21 22:47:07 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"lyon"}
+Completed 200 OK in 307ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/lyon" for 127.0.0.1 at 2017-06-21 22:47:11 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"lyon"}
+Completed 200 OK in 267ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 22:47:54 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1104.9ms)
+Completed 200 OK in 1109ms (Views: 1109.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/paris" for 127.0.0.1 at 2017-06-21 22:48:06 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"paris"}
+Completed 200 OK in 754ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 22:51:30 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1048.4ms)
+Completed 200 OK in 1059ms (Views: 1058.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/paris" for 127.0.0.1 at 2017-06-21 22:51:38 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"paris"}
+Completed 200 OK in 283ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 22:53:22 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1023.1ms)
+Completed 200 OK in 1031ms (Views: 1030.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/paris" for 127.0.0.1 at 2017-06-21 22:53:41 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"paris"}
+Completed 200 OK in 268ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 22:56:18 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1110.9ms)
+Completed 200 OK in 1113ms (Views: 1113.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/lyon" for 127.0.0.1 at 2017-06-21 22:56:30 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"lyon"}
+Completed 200 OK in 424ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 22:57:25 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (972.7ms)
+Completed 200 OK in 981ms (Views: 980.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 22:58:15 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1050.3ms)
+Completed 200 OK in 1058ms (Views: 1058.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/paris" for 127.0.0.1 at 2017-06-21 22:58:26 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"paris"}
+Completed 200 OK in 289ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:00:39 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1030.9ms)
+Completed 200 OK in 1034ms (Views: 1034.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:02:12 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1087.3ms)
+Completed 200 OK in 1092ms (Views: 1091.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:04:36 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1134.9ms)
+Completed 200 OK in 1140ms (Views: 1139.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/paris" for 127.0.0.1 at 2017-06-21 23:06:02 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"paris"}
+Completed 200 OK in 750ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:06:37 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (4399.5ms)
+Completed 200 OK in 4403ms (Views: 4402.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/paris" for 127.0.0.1 at 2017-06-21 23:07:10 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"paris"}
+Completed 200 OK in 311ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:08:22 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (4586.6ms)
+Completed 200 OK in 4590ms (Views: 4589.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170620/nantes" for 127.0.0.1 at 2017-06-21 23:08:37 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170620", "city"=>"nantes"}
+Completed 200 OK in 309ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:11:29 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (208.1ms)
+Completed 200 OK in 210ms (Views: 210.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather" for 127.0.0.1 at 2017-06-21 23:11:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/weather"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.7ms)
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (35.9ms)
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:15:05 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1102.6ms)
+Completed 200 OK in 1107ms (Views: 1106.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather" for 127.0.0.1 at 2017-06-21 23:15:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/weather"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered collection of /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (1.7ms)
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.8ms)
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.3ms)
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.4ms)
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:16:38 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1321.9ms)
+Completed 200 OK in 1325ms (Views: 1325.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170621/lyon" for 127.0.0.1 at 2017-06-21 23:16:50 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170621", "city"=>"lyon"}
+Completed 200 OK in 597ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather" for 127.0.0.1 at 2017-06-21 23:16:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/weather"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (2.2ms)
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.3ms)
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (97.4ms)
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:17:24 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (236.9ms)
+Completed 200 OK in 247ms (Views: 247.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:18:36 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1157.6ms)
+Completed 200 OK in 1160ms (Views: 1159.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170621/lyon" for 127.0.0.1 at 2017-06-21 23:18:50 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170621", "city"=>"lyon"}
+Completed 200 OK in 238ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:27:23 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1078.0ms)
+Completed 200 OK in 1081ms (Views: 1080.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:28:32 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (925.5ms)
+Completed 200 OK in 928ms (Views: 927.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:29:06 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1045.3ms)
+Completed 200 OK in 1052ms (Views: 1051.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:29:31 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (202.4ms)
+Completed 200 OK in 210ms (Views: 209.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:31:09 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1069.6ms)
+Completed 200 OK in 1073ms (Views: 1072.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:34:01 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1042.4ms)
+Completed 200 OK in 1045ms (Views: 1045.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:34:53 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1025.7ms)
+Completed 200 OK in 1028ms (Views: 1027.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:35:34 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1184.5ms)
+Completed 200 OK in 1194ms (Views: 1193.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/lyon" for 127.0.0.1 at 2017-06-21 23:36:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/weather/lyon"):
+  
+actionpack (5.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.3) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.3) lib/rails/engine.rb:522:in `call'
+puma (3.9.1) lib/puma/configuration.rb:224:in `call'
+puma (3.9.1) lib/puma/server.rb:602:in `handle_request'
+puma (3.9.1) lib/puma/server.rb:435:in `process_client'
+puma (3.9.1) lib/puma/server.rb:299:in `block in run'
+puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered collection of /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb [2 times] (5.3ms)
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.5ms)
+  Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.5ms)
+  Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.1ms)
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:38:53 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1029.7ms)
+Completed 200 OK in 1035ms (Views: 1034.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:40:33 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (958.5ms)
+Completed 200 OK in 960ms (Views: 960.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:41:38 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (228.4ms)
+Completed 200 OK in 232ms (Views: 231.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:42:27 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (191.6ms)
+Completed 200 OK in 200ms (Views: 199.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:53:42 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (2479.6ms)
+Completed 200 OK in 2486ms (Views: 2486.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:54:30 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1434.2ms)
+Completed 200 OK in 1449ms (Views: 1448.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170201/nantes" for 127.0.0.1 at 2017-06-21 23:54:48 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170201", "city"=>"nantes"}
+Completed 200 OK in 572ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20150516/bordeaux" for 127.0.0.1 at 2017-06-21 23:55:10 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20150516", "city"=>"bordeaux"}
+Completed 200 OK in 633ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20150516/paris" for 127.0.0.1 at 2017-06-21 23:55:15 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20150516", "city"=>"paris"}
+Completed 200 OK in 514ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:56:52 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1036.8ms)
+Completed 200 OK in 1041ms (Views: 1040.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170610/lyon" for 127.0.0.1 at 2017-06-21 23:57:05 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170610", "city"=>"lyon"}
+Completed 200 OK in 494ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170610/bordeaux" for 127.0.0.1 at 2017-06-21 23:57:12 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170610", "city"=>"bordeaux"}
+Completed 200 OK in 535ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-21 23:57:45 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (195.5ms)
+Completed 200 OK in 197ms (Views: 197.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170616/lyon" for 127.0.0.1 at 2017-06-21 23:58:00 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170616", "city"=>"lyon"}
+Completed 200 OK in 536ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170105/nantes" for 127.0.0.1 at 2017-06-21 23:58:28 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170105", "city"=>"nantes"}
+Completed 200 OK in 627ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 00:01:36 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1061.8ms)
+Completed 200 OK in 1066ms (Views: 1065.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 00:02:00 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (984.1ms)
+Completed 200 OK in 986ms (Views: 985.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 00:02:31 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1011.0ms)
+Completed 200 OK in 1013ms (Views: 1012.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 00:02:53 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1131.3ms)
+Completed 200 OK in 1141ms (Views: 1141.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 00:03:02 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (975.7ms)
+Completed 200 OK in 982ms (Views: 981.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20131129/nantes" for 127.0.0.1 at 2017-06-22 00:03:22 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20131129", "city"=>"nantes"}
+Completed 200 OK in 531ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+

@@ -1,0 +1,35 @@
+{:uriI"ƒfile://app/assets/javascripts/views/home.html?type=text/ng-html&id=689d8a2a7f362b83cb13d244bc73054a27a1b4230b800aeb1829efa3d848ca89:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/views/home.html;T:	nameI"views/home;T:logical_pathI"views/home.html;T:content_typeI"text/ng-html;T:sourceI"6<my-navbar-directive></my-navbar-directive>
+<div>
+	<form ng-submit='getWeather()'>
+		<input type="text" value="{{datepicker | date : 'yyyyMMdd'}}">
+		<!-- <input type="text" ng-model="city"> -->
+		<select ng-model="city">
+		  <option value="paris">Paris</option>
+		  <option value="lyon">Lyon</option>
+		  <option value="nantes">Nantes</option>
+		  <option value="bordeaux">Bordeaux</option>
+		</select>
+		<button type="submit">Get weather !!!</button>
+	</form>
+</div>
+<div layout-gt-xs="row">
+	<div>
+		<h4>Opening the calendar when the input is focused</h4>
+		<md-datepicker ng-model="datepicker" md-min-date="minDate" md-placeholder="Enter date" md-open-on-focus></md-datepicker>
+	</div>
+</div>
+<div>
+	<p>{{datepicker}}</p>
+	<p>{{finaldate}}</p>
+</div>
+
+<div ng-if="result.maxtemp" class="animate-if">
+	<p>A {{city | capitalize}} le {{datepicker | date : 'dd/MM/yyyy'}}, voici la mÃ©tÃ©o qu'il faisait :</p>
+	<p>TempÃ©rature maximale : {{result.maxtemp}}Â°C</p>
+	<p>TempÃ©rature moyenne : {{result.meantemp}}Â°C</p>
+	<p>TempÃ©rature minimale : {{result.mintemp}}Â°C</p>
+</div>;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"9file-digest://app/assets/javascripts/views/home.html;TTF:charsetI"
+utf-8;F:digest"%Ö8…Ò€a†š–Ú®Ó;¯e¥T¾ a ¦î~ãLd:lengthi6:dependencies_digest"%ùN1/9N,ŸÅsO9Ç5§Ž÷#Îµµþ©:Ïþá©Áá :idI"E689d8a2a7f362b83cb13d244bc73054a27a1b4230b800aeb1829efa3d848ca89;F:
+mtimel+™åJY

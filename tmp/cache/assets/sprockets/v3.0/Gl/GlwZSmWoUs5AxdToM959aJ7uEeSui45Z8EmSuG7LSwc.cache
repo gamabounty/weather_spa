@@ -1,0 +1,29 @@
+{:uriI"ƒfile://app/assets/javascripts/views/home.html?type=text/ng-html&id=6865a387fc934935070f805883d2472d211487a0be311681e23b8a2da4b3df7c:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/views/home.html;T:	nameI"views/home;T:logical_pathI"views/home.html;T:content_typeI"text/ng-html;T:sourceI"ü<my-navbar-directive></my-navbar-directive>
+<div>
+	<form ng-submit='getWeather()'>
+		<input type="text" value="{{datepicker | date : 'yyyyMMdd'}}">
+		<!-- <input type="text" ng-model="city"> -->
+		<select ng-model="city">
+		  <option value="paris" selected>Paris</option>
+		  <option value="lyon">Lyon</option>
+		  <option value="nantes">Nantes</option>
+		  <option value="bordeaux">Bordeaux</option>
+		</select>
+		<button type="submit">Get weather !!!</button>
+	</form>
+</div>
+<div layout-gt-xs="row">
+	<div>
+		<h4>Opening the calendar when the input is focused</h4>
+		<md-datepicker ng-model="datepicker" md-min-date="minDate" md-placeholder="Enter date" md-open-on-focus></md-datepicker>
+	</div>
+</div>
+<div>
+	<p>{{test}}</p>
+</div>
+{{datepicker}}
+{{finaldate}};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"9file-digest://app/assets/javascripts/views/home.html;TTF:charsetI"
+utf-8;F:digest"%‚øî+Gz-ƒV£|z•Bn}È¹×´ò¬¬/‘1Ñ¹ŒŒ|:lengthiü:dependencies_digest"%é4¯tï!(¬@Ý]û[Ý‘ž‘e3!#Žr9Ôc'm:idI"E6865a387fc934935070f805883d2472d211487a0be311681e23b8a2da4b3df7c;F:
+mtimel+f˜IY
