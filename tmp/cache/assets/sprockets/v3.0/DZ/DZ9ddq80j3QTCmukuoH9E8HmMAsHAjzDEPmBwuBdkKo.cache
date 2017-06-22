@@ -1,21 +1,0 @@
-{:uriI"ƒfile://app/assets/javascripts/views/home.html?type=text/ng-html&id=1accba422b8e452aaabbf549e9b1346f90f4043779f77d02ee44634633ed7dd7:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/views/home.html;T:	nameI"views/home;T:logical_pathI"views/home.html;T:content_typeI"text/ng-html;T:sourceI"Ó<my-navbar-directive></my-navbar-directive>
-<div>
-	<form ng-submit='getWeather()'>
-		<input type="text" ng-model="date">
-		<!-- <input type="text" ng-model="city"> -->
-		<select ng-model="city">
-		  <option value="paris" selected>Paris</option>
-		  <option value="lyon">Lyon</option>
-		  <option value="nantes">Nantes</option>
-		  <option value="bordeaux">Bordeaux</option>
-		</select>
-		<button type="submit">Get weather !!!</button>
-	</form>
-</div>
-
-<p>{{test}}</p>;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"9file-digest://app/assets/javascripts/views/home.html;TTF:charsetI"
-utf-8;F:digest"%”AÂ1£„)`½ÕüDfY}•,‰ª‰5O2
-:lengthiÓ:dependencies_digest"%ñæ™c¸ä›àÜ¥ÍÁ­ aÏÌÓğŒ(Â³Â.ÉÉ;:idI"E1accba422b8e452aaabbf549e9b1346f90f4043779f77d02ee44634633ed7dd7;F:
-mtimel+ËRHY

@@ -4,24 +4,29 @@
 		<!-- <input type="text" value="{{datepicker | date : 'yyyyMMdd'}}"> -->
 		<!-- <input type="text" ng-model="city"> -->
 		<div>
-			<md-datepicker ng-model="datepicker" md-min-date="minDate" md-placeholder="Enter date" md-open-on-focus></md-datepicker>
+			<label>Select a date</label>
+			<md-datepicker ng-model="datepicker" md-min-date="minDate" md-max-date="maxDate" md-placeholder="Enter date" md-open-on-focus></md-datepicker>
 		</div>
-		<label>Choose a city !</label>
-		<select ng-model="city">
-		  <option value="paris">Paris</option>
-		  <option value="lyon">Lyon</option>
-		  <option value="nantes">Nantes</option>
-		  <option value="bordeaux">Bordeaux</option>
-		</select> <br/>
-		<button type="submit">Get weather !!!</button>
+		<!-- <div>
+			<select ng-model="city">
+			  <option value="paris">Paris</option>
+			  <option value="lyon">Lyon</option>
+			  <option value="nantes">Nantes</option>
+			  <option value="bordeaux">Bordeaux</option>
+			</select> <br/><hr/>
+		</div> -->
+		<div>
+			<label>Choose a city !</label>
+			<select ng-init="city = cities[0]" 
+		        	ng-model="city" 
+		        	ng-options="town.value as town.name for town in cities">
+			</select><br/><hr/>
+		</div>
+		<button type="submit">Hit me to get the weather !!!</button>
 	</form>
 </div>
-<div layout-gt-xs="row">
-</div>
-<!-- <div>
-	<p>{{datepicker}}</p>
-	<p>{{finaldate}}</p>
-</div> -->
+
+<br/>
 
 <div ng-if="result.maxtemp" class="animate-if">
 	<p>A {{city | capitalize}} le {{datepicker | date : 'dd/MM/yyyy'}}, voici la météo qu'il faisait :</p>
@@ -29,3 +34,4 @@
 	<p>Température moyenne : {{result.meantemp}}°C</p>
 	<p>Température minimale : {{result.mintemp}}°C</p>
 </div>
+
