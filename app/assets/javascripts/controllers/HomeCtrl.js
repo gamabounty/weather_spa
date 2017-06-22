@@ -8,7 +8,6 @@ angular
   	// This function uses the factory WeatherService with two parameters from the html body
   	$scope.getWeather = function() {
   		$scope.result = WeatherService.get({date:$scope.finaldate, city:$scope.city});
-      console.log($scope.result);
   	}
 
     // This function monitors whether the date chosen in the datepicker has changed

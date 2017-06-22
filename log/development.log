@@ -3658,3 +3658,224 @@ puma (3.9.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
   Rendering /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
   Rendered /home/changeme/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.2ms)
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:32:48 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1664.8ms)
+Completed 200 OK in 1686ms (Views: 1685.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170604/barfleur" for 127.0.0.1 at 2017-06-22 23:33:24 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170604", "city"=>"barfleur"}
+Started GET "/weather/20170604/barfleur" for 127.0.0.1 at 2017-06-22 23:33:33 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170604", "city"=>"barfleur"}
+Completed 200 OK in 9005ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 9476ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:33:49 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (326.5ms)
+Completed 200 OK in 336ms (Views: 336.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170125/rennes" for 127.0.0.1 at 2017-06-22 23:34:02 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170125", "city"=>"rennes"}
+Completed 200 OK in 9685ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170125/ajaccio" for 127.0.0.1 at 2017-06-22 23:34:46 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170125", "city"=>"ajaccio"}
+Completed 200 OK in 3255ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:41:07 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1095.5ms)
+Completed 200 OK in 1100ms (Views: 1099.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170610/ajaccio" for 127.0.0.1 at 2017-06-22 23:41:25 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170610", "city"=>"ajaccio"}
+Completed 200 OK in 526ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:41:59 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (915.7ms)
+Completed 200 OK in 920ms (Views: 919.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170604/montpellier" for 127.0.0.1 at 2017-06-22 23:42:07 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170604", "city"=>"montpellier"}
+Completed 200 OK in 567ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:44:19 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (924.1ms)
+Completed 200 OK in 926ms (Views: 925.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170101/montpellier" for 127.0.0.1 at 2017-06-22 23:44:31 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170101", "city"=>"montpellier"}
+Completed 200 OK in 682ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:45:48 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (914.4ms)
+Completed 200 OK in 921ms (Views: 920.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170618/bordeaux" for 127.0.0.1 at 2017-06-22 23:46:15 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170618", "city"=>"bordeaux"}
+Completed 200 OK in 545ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:46:34 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1091.7ms)
+Completed 200 OK in 1096ms (Views: 1095.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170605/bordeaux" for 127.0.0.1 at 2017-06-22 23:46:41 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170605", "city"=>"bordeaux"}
+Completed 200 OK in 561ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170605/lyon" for 127.0.0.1 at 2017-06-22 23:48:24 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170605", "city"=>"lyon"}
+Completed 200 OK in 545ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:49:07 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (4238.8ms)
+Completed 200 OK in 4244ms (Views: 4244.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170605/barfleur" for 127.0.0.1 at 2017-06-22 23:49:17 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170605", "city"=>"barfleur"}
+Completed 200 OK in 2015ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:51:00 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (1305.0ms)
+Completed 200 OK in 1309ms (Views: 1308.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170609/paris" for 127.0.0.1 at 2017-06-22 23:51:07 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170609", "city"=>"paris"}
+Completed 200 OK in 512ms (Views: 0.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:51:50 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (4364.4ms)
+Completed 200 OK in 4377ms (Views: 4377.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170612/barfleur" for 127.0.0.1 at 2017-06-22 23:51:59 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170612", "city"=>"barfleur"}
+Completed 200 OK in 570ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:53:09 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (980.7ms)
+Completed 200 OK in 984ms (Views: 984.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:54:43 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (823.3ms)
+Completed 200 OK in 831ms (Views: 831.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:55:52 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (4073.9ms)
+Completed 200 OK in 4079ms (Views: 4078.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:59:01 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (742.2ms)
+Completed 200 OK in 747ms (Views: 747.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-22 23:59:25 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (764.6ms)
+Completed 200 OK in 772ms (Views: 772.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20160227/caen" for 127.0.0.1 at 2017-06-22 23:59:42 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20160227", "city"=>"caen"}
+Completed 200 OK in 814ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20160227/paris" for 127.0.0.1 at 2017-06-23 00:00:09 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20160227", "city"=>"paris"}
+Completed 200 OK in 1573ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20160227/dunkerque" for 127.0.0.1 at 2017-06-23 00:03:01 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20160227", "city"=>"dunkerque"}
+Completed 200 OK in 998ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-23 00:03:29 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (3339.7ms)
+Completed 200 OK in 3342ms (Views: 3341.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-23 00:03:42 +0200
+Processing by ApplicationController#index as HTML
+  Rendering application/index.html.erb
+  Rendered application/index.html.erb (4013.3ms)
+Completed 200 OK in 4019ms (Views: 4019.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/weather/20170602/dunkerque" for 127.0.0.1 at 2017-06-23 00:11:58 +0200
+Processing by WeatherController#get_weather as HTML
+  Parameters: {"date"=>"20170602", "city"=>"dunkerque"}
+Completed 200 OK in 426ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+

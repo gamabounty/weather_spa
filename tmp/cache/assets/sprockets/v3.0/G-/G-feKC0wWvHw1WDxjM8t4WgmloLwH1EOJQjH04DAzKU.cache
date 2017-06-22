@@ -1,0 +1,42 @@
+{:uriI"ƒfile://app/assets/javascripts/views/home.html?type=text/ng-html&id=3274e2d3b60caa518f8cf410debee8f506b35441a0a90434fd86830770edde30:ET:load_pathI"app/assets/javascripts;T:filenameI"+app/assets/javascripts/views/home.html;T:	nameI"views/home;T:logical_pathI"views/home.html;T:content_typeI"text/ng-html;T:sourceI"÷<my-navbar-directive></my-navbar-directive>
+<div>
+	<form ng-submit='getWeather()'>
+		<!-- <input type="text" value="{{datepicker | date : 'yyyyMMdd'}}"> -->
+		<!-- <input type="text" ng-model="city"> -->
+		<div>
+			<label>Select a date</label>
+			<md-datepicker ng-model="datepicker" md-min-date="minDate" md-max-date="maxDate" md-placeholder="Enter date" md-open-on-focus></md-datepicker>
+		</div>
+		<!-- <div>
+			<select ng-model="city">
+			  <option value="paris">Paris</option>
+			  <option value="lyon">Lyon</option>
+			  <option value="nantes">Nantes</option>
+			  <option value="bordeaux">Bordeaux</option>
+			</select> <br/><hr/>
+		</div> -->
+		<div>
+			<label>Choose a city !</label>
+			<select ng-init="city = cities[0]" 
+		        	ng-model="city" 
+		        	ng-options="town.value as town.name for town in cities">
+			</select><br/><hr/>
+		</div>
+		<button type="submit">Hit me to get the weather !!!</button>
+	</form>
+</div>
+
+<br/>
+
+<div ng-if="result.maxtemp" class="animate-if">
+	<p>A {{city | capitalize}} le {{datepicker | date : 'dd/MM/yyyy'}}, voici la mÃ©tÃ©o qu'il faisait :</p>
+	<p>TempÃ©rature maximale : {{result.maxtemp}}Â°C</p>
+	<p>TempÃ©rature moyenne : {{result.meantemp}}Â°C</p>
+	<p>TempÃ©rature minimale : {{result.mintemp}}Â°C</p>
+</div>
+
+;T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"8processors:type=text/ng-html&file_type=text/ng-html;TTI"9file-digest://app/assets/javascripts/views/home.html;TTF:charsetI"
+utf-8;F:digest"%›á±-Ñ[ëàGûÂH=›î¦ñÌa~‘ñ‹ú¨—JäW:lengthi÷:dependencies_digest"%9®Á‡$4ü€^À -`´nV%,\“:ƒÕ@k"¨„!:idI"E3274e2d3b60caa518f8cf410debee8f506b35441a0a90434fd86830770edde30;F:
+mtimel+2LY
