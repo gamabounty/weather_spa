@@ -1,6 +1,6 @@
 angular
   .module('myWeatherApp')
-  .controller('HomeCtrl', function($scope, $rootScope, WeatherService, $filter) {
+  .controller('HomeCtrl', function($scope, $rootScope, WeatherService, WeatherToday, $filter) {
 
     $scope.minDate = new Date(97, 12, 01, 12, 0, 0, 0);
   	$scope.maxDate = new Date();
@@ -8,6 +8,7 @@ angular
   	// This function uses the factory WeatherService with two parameters from the html body
   	$scope.getWeather = function() {
   		$scope.result = WeatherService.get({date:$scope.finaldate, city:$scope.city});
+      $scope.today = WeatherToday.get({city:$scope.city})
   	}
 
     // This function monitors whether the date chosen in the datepicker has changed

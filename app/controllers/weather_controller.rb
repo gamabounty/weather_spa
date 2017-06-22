@@ -1,4 +1,5 @@
 require 'WeatherForecast'
+require 'WeatherCurrent'
 
 class WeatherController < ActionController::Base
 	protect_from_forgery with: :exception
@@ -14,4 +15,14 @@ class WeatherController < ActionController::Base
 	  # render 'application/test'
 	  render json: @weather
 	end
+
+	def get_current
+	  if params[:city]
+	  	@current = WeatherCurrent.get_current(params[:city])
+	  else
+	  	@current = WeatherCurrent.get_current("Paris")
+	  end
+	  render json: @current
+	end
+
 end
